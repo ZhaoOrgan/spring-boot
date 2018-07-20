@@ -1,1 +1,9 @@
 /target/
+/org.iml
+.idea
+*.iml
+.DS_Store
+.mvn/
+.classpath
+.project
+/bin/
