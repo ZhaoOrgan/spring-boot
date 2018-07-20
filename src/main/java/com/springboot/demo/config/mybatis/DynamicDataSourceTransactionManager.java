@@ -7,7 +7,6 @@ import com.springboot.demo.constants.DynamicDataSourceGlobal;
 /**
  * 根据事务是否可读
  * @author zhaoxuefeng
- *
  */
 @SuppressWarnings("serial")
 public class DynamicDataSourceTransactionManager extends DataSourceTransactionManager {

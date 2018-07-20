@@ -8,17 +8,14 @@ import com.springboot.demo.model.User;
 
 @Mapper
 public interface UserMapper {
-	/**
-	 * 查询所有用户
-	 * @return
-	 */
+
+	// 查询所有用户
 	public List<User> queryAllUser();
-	
-	/**
-	 * 添加用户
-	 * @param user
-	 * @return
-	 */
+
+	// 添加用户
 	long insert(User user);
+
+	// 更新用户信息
+	long update(int id);
 
 }

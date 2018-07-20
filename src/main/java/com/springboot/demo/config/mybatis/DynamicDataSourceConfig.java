@@ -25,7 +25,11 @@ import com.alibaba.druid.pool.DruidDataSource;
 import com.springboot.demo.config.mybatis.DynamicDataSource;
 import com.springboot.demo.config.mybatis.DynamicDataSourceTransactionManager;
 import com.springboot.demo.constants.DynamicDataSourceGlobal;
-
+/**
+ * @description: 数据源配置类
+ * @author zhaoxuefeng
+ * @date 2018年7月18日 下午11:06:25
+ */
 @Configuration
 @PropertySource(value = { "classpath:application-dev.yml" })
 public class DynamicDataSourceConfig {

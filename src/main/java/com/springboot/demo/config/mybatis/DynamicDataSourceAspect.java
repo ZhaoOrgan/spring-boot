@@ -12,9 +12,9 @@ import groovy.util.logging.Slf4j;
 @Component
 @Slf4j
 /**
- * 默认操作write数据库
- * 
+ * @description: 默认操作write数据库
  * @author zhaoxuefeng
+ * @date 2018年7月18日 下午11:06:25
  */
 public class DynamicDataSourceAspect {
 
