@@ -1,28 +1,23 @@
 package spring.boot.demo;
 
 import java.util.ArrayList;
+
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import javax.annotation.Resource;
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.web.client.TestRestTemplate;
-import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.web.WebAppConfiguration;
 
-import com.springboot.demo.service.UserService;
+import com.springboot.demo.Application;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest
+@RunWith(SpringJUnit4ClassRunner.class)
+@SpringBootTest(classes = Application.class)
+@WebAppConfiguration
 public class DemoTest {
-	
-	@Resource
-	private TestRestTemplate testRestTemplate;
-	@Resource
-	private UserService userservice;
 
 	@Test
 	public void test() {
@@ -31,8 +26,7 @@ public class DemoTest {
 		list.add(new Hosting(2, "SpringBoot"));
 		list.add(new Hosting(3, "SpringCloud"));
 
-		Map<Integer, String> result1 = list.stream().collect(
-                Collectors.toMap(Hosting::getId, x -> x.getName()));
+		Map<Integer, String> result1 = list.stream().collect(Collectors.toMap(Hosting::getId, x -> x.getName()));
 		System.out.println(result1);
 	}
 
