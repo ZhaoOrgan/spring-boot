@@ -25,6 +25,7 @@ import com.alibaba.druid.pool.DruidDataSource;
 import com.springboot.demo.config.mybatis.DynamicDataSource;
 import com.springboot.demo.config.mybatis.DynamicDataSourceTransactionManager;
 import com.springboot.demo.constants.DynamicDataSourceGlobal;
+
 /**
  * @description: 数据源配置类
  * @author zhaoxuefeng
@@ -57,7 +58,7 @@ public class DynamicDataSourceConfig {
 		dataSourceMap.put(DynamicDataSourceGlobal.READ.name(), readDataSource());
 		dataSourceMap.put(DynamicDataSourceGlobal.WRITE.name(), writeDataSource());
 		// 传入数据源map，AbstractRoutingDataSource将以key来分配数据源
-		//dynamicDataSource.setDefaultTargetDataSource(writeDataSource());
+		// dynamicDataSource.setDefaultTargetDataSource(writeDataSource());
 		dynamicDataSource.setTargetDataSources(dataSourceMap);
 		return dynamicDataSource;
 	}
