@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Implementation-Title: org
 Implementation-Version: 0.0.1-SNAPSHOT
 Built-By: zhaoxuefeng
-Implementation-Vendor-Id: com.zxf.org
+Implementation-Vendor-Id: com.demo.org
 Build-Jdk: 1.8.0_161
 Implementation-URL: http://projects.spring.io/spring-boot/org/
 Created-By: Maven Integration for Eclipse

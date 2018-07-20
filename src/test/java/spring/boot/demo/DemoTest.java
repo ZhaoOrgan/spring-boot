@@ -13,7 +13,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.springboot.zxf.service.UserService;
+import com.springboot.demo.service.UserService;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
