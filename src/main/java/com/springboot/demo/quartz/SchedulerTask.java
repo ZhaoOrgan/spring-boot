@@ -4,14 +4,14 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import org.springframework.scheduling.annotation.Scheduled;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 /**
  * @Description: spring-boot定时任务
  * @author zhaoxuefeng
  * @date 2018年7月20日
  */
-@Component
+@Service
 public class SchedulerTask {
 
 	private int count = 0;

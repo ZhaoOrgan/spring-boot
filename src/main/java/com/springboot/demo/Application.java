@@ -7,8 +7,8 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 /**
- * @description: 项目入口
  * @author zhaoxuefeng
+ * @description: 项目入口
  * @date 2018年7月18日 下午11:16:59
  */
 @SpringBootApplication
@@ -16,7 +16,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @MapperScan("com.springboot.demo.mapper")
 @EnableScheduling
 public class Application {
-	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(Application.class, args);
+    }
 }
